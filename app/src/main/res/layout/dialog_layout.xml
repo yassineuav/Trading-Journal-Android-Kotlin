@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="#D52E2D2D">
+<!--    android:backgroundTint="#D5656363"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/input_text_week_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="week number from 1 to 4"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/input_text_balance_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="balance start"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/input_text_balance_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="target balance"
+            android:layout_marginBottom="26dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:text="Cancel"/>
+
+            <Button
+                android:layout_alignParentEnd="true"
+                android:id="@+id/button_save"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginEnd="8dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

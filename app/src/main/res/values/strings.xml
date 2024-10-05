@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Journal Trading</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_goals">Gaols</string>
+
+    <string-array name="status_options">
+        <item>Win</item>
+        <item>Loss</item>
+        <item>Break Even</item>
+    </string-array>
+</resources>

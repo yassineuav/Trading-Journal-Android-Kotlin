@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343124130065",
+    "project_id": "journal-trading-fc213",
+    "storage_bucket": "journal-trading-fc213.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343124130065:android:e65e6d6a325bd62a5af4b0",
+        "android_client_info": {
+          "package_name": "com.yassine.journaltrading"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOP6jH4QaHuWczmTZg0VeZZBlHmHD10f0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

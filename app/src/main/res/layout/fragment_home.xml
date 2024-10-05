@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.yassine.journaltrading.ui.home.TradeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/contentView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            <!-- TextView to display total profit and loss -->
+            <TextView
+
+                android:textColor="@color/white"
+                android:id="@+id/tvTotalProfitOrLoss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+             />
+
+                <TextView
+
+                    android:textColor="@color/white"
+                    android:id="@+id/tvStartBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    />
+
+
+
+        </RelativeLayout>
+
+        <!-- RecyclerView to display the list of trades -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTrades"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:trades="@{viewModel.trades}"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_trade"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+         />
+
+    </LinearLayout>
+        <!-- Floating Action Button (FAB) for adding new trades -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddTrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@android:drawable/ic_input_add"
+            android:contentDescription="@string/app_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
